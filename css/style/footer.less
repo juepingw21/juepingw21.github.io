@@ -1,0 +1,23 @@
+.set-footer-style(@font-size-title:16px, @font-size-body:16px){
+    footer{
+        padding: 2rem 1rem;
+        height: 40px;
+        line-height: 1.5;
+        box-shadow: rgba(0, 0, 0, 0.04) 0 -4px 2px -2px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        letter-spacing: 1px;
+        .set-font-style(roboto,@font-color-light,@font-size-title,400, normal);
+        div a {
+            cursor: pointer;
+            text-decoration: none;
+            color: inherit;
+        }
+        div a:hover{
+            .set-font-style(roboto,@font-color-light,@font-size-title,500, normal);
+            text-decoration: none;
+        }
+    }
+}

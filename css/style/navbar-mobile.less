@@ -1,0 +1,43 @@
+.set-mobile-navbar-style(){
+    body {
+        overflow-x: hidden;
+    }
+    nav {
+        justify-content: left;
+        .nav-links {
+            position: absolute;
+            left: 0px;
+            height: 48vh;
+            top: 50px;
+            background-color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 50%;
+            transform: translate(-100%);
+        }
+
+        .burger {
+            display: block;
+            cursor: pointer;
+        }
+        
+        .nav-links {
+            li {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-bottom: 2px solid white; 
+                border-top: 2px solid white;
+            }
+            li:hover {
+                border-bottom: 2px solid @font-color-dark;
+            }
+        }
+
+        .nav-active {
+            transform: translate(0);
+        }
+    }
+}

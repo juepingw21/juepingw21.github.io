@@ -1,0 +1,26 @@
+.set-exper-style(@exper-font-size-title: 18px, @exper-font-size-body: 16px) {
+    .experience {
+        line-height: 1.5;
+        margin: 2rem 1rem;
+        .set-font-style(source-serif-pro,@font-color-dark,@exper-font-size-title,600, normal);
+        .experience-item {
+            margin: 0 0 1rem 0;
+            .exp-info-p1 {
+                .at {
+                    .set-font-style(source-serif-pro,@font-color-dark,@exper-font-size-body,300, normal);
+                }
+                .company {
+                    .set-font-style(source-serif-pro,@font-color-dark,@exper-font-size-body,300, normal);
+                }
+            }
+            .exp-info-p2 {
+                .set-font-style(source-serif-pro,@font-color-light,@exper-font-size-body,300, italic);
+            }
+            ul {
+                .set-font-style(source-serif-pro,@font-color-dark,@exper-font-size-title,300, normal);
+                list-style: square inside none;
+            }
+        }
+    }
+    
+}

@@ -1,0 +1,37 @@
+.set-ability-style(@ability-font-size: 20px) {
+    .ability {
+        line-height: 1.5;
+        margin: 2rem 1rem;
+
+        .skills {
+            li {
+                display: flex;
+                .category {
+                    padding: 0 0.5rem 0 0;
+                    .set-font-style(source-serif-pro,@font-color-dark,@ability-font-size,700, normal);
+                }
+                .detail {
+                    .set-font-style(source-serif-pro,@font-color-dark,@ability-font-size,400, italic);
+                }
+            }
+        }
+        .ability-course {
+            .course-title {
+                .set-font-style(source-serif-pro,@font-color-dark,@ability-font-size,700, normal);
+            }
+            .course-list {
+                margin: 0 0.5rem;
+                // display: flex;
+                // flex-direction: row;
+                .set-font-style(source-serif-pro,@font-color-dark,@ability-font-size,400, italic);
+                .course-col1 {
+                    list-style: square inside none;
+                }
+                .course-col2 {
+                    // margin: 0 1rem 0 1rem;
+                    list-style: square inside none;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,55 @@
+.set-highlights-style(@name-font-size: 20px, @info-font-size: 16px, @photo-with:6rem, @photo-height:6rem) {
+    .highlight {
+        margin:2rem 1rem;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        .profile-photo {
+            width: @photo-with;
+            height: @photo-height;
+            border-radius: 50%;
+            display: block;
+            box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        }
+        .personal-info {
+            margin: 0rem 1rem;
+            .name {
+                margin: 0rem 0rem 0.5rem 0rem;
+                .set-font-style(roboto, @font-color-dark, @name-font-size, 700, normal);
+            }
+            .status {
+                margin: 0rem 0rem 0.25rem 0rem;
+                .set-font-style(source-serif-pro,@font-color-dark,@info-font-size,300, normal);
+            }
+            .degrees {
+                .set-font-style(source-serif-pro,@font-color-dark,@info-font-size,300, normal);
+                .bs{
+                    margin: 0rem 0rem 0.25rem 0rem;
+                    display: block;
+                }
+                .vbar {
+                    display: none;
+                }
+                .ms{
+                    display: block;
+                }
+                margin: 0rem 0rem 0.5rem 0rem;
+            }
+        }
+
+        .external-link-container{
+            display: flex;
+            flex-direction: row;
+                a{
+                    display: block;
+                    margin: 0 1rem 0 0;
+                    .external-link{
+                        cursor: pointer;
+                        width: @name-font-size;
+                        height: @name-font-size;
+                        vertical-align: bottom;
+                    }
+                }
+        }
+    }
+}

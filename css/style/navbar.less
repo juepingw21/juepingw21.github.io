@@ -1,0 +1,62 @@
+.set-static-navbar-style(@font-size: 16px){
+    nav {
+        position: sticky;
+        top: 0;
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        height: 50px;
+        background-color: white;
+        padding: 0 9px;
+        box-shadow: rgba(0, 0, 0, 0.04) 0 4px 2px -2px;
+        
+        
+        .nav-links {
+            display: flex;
+            justify-content: space-around;
+            width: 60%;
+            li {
+                list-style: none;
+                display: flex;
+                align-items: center;
+                a {
+                    .set-font-style(roboto, @font-color-dark, @font-size, 500, normal);
+                    text-decoration: none;
+                    // letter-spacing: 3px;
+                }
+            }
+        }
+        
+        .burger {
+            display: none;
+            padding: 4px;
+            div {
+                width: 25px;
+                height: 3px;
+                background-color: @font-color-dark;
+                margin: 5px;
+            }
+        }
+
+        .toggle .line1 {
+            transform: rotate(-45deg) translate(-5px, 6px);
+        }
+        .toggle .line2 {
+            opacity: 0;
+        }
+        .toggle .line3 {
+            transform: rotate(45deg) translate(-5px, -6px);
+        }
+    
+        @keyframes navLinkFade {
+            from {
+                opacity: 0;
+                transform: translate(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translate(0px);
+            }
+        }
+    }
+}

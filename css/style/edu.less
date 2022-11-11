@@ -1,0 +1,18 @@
+.set-edu-style(@edu-font-size-title: 18px, @edu-font-size-body: 16px) {
+    .edu {
+        margin: 2rem 1rem;
+        line-height: 1.5;
+        .edu-item {
+            margin: 0 0 1rem 0;
+            .edu-name {
+                .set-font-style(source-serif-pro,@font-color-dark,@edu-font-size-title,600, normal);
+            }
+            .major {
+                .set-font-style(source-serif-pro,@font-color-light,@edu-font-size-body,300, italic);
+            }
+            .edu-date {
+                .set-font-style(source-serif-pro,@font-color-light,@edu-font-size-body,300, italic);
+            }
+        }
+    }
+}
