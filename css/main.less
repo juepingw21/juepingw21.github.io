@@ -6,7 +6,7 @@
 @import "./style/ability.less";
 @import "./style/edu.less";
 @import "./style/experience.less";
-@import "./style/project.less";
+@import "./style/project.less"; 
 @import "./style/navbar-mobile.less";
 @import "./style/navbar-tablet.less";
 @import "./style/section-title.less";
@@ -16,13 +16,13 @@
     .set-static-navbar-style(16px);  
     .set-mobile-navbar-style();  
     .set-section-title-style(20px);
-    .set-highlights-style(20px, 18px, 110px, 110px);
+    .set-highlights-style(18px, 16px, 85px, 85px);
     .set-about-style(18px);
     .set-ability-style(18px);
     .set-edu-style(18px, 16px); 
     .set-exper-style(18px, 16px);
     .set-project-style(18px, 16px);
-    .set-footer-style(14px , 14);
+    .set-footer-style(12px , 12px);
 } 
 
 .set-css-tablet() {
@@ -35,13 +35,14 @@
     .set-edu-style(20px, 18px);
     .set-exper-style(20px, 18px);
     .set-project-style(20px, 18px);
-    .set-footer-style(14px , 14);
+    .set-footer-style(14px , 14px);
+    .set-footer-style(12px , 12px);
 }
 
 .set-html(@layout-factor: 20px) {
     html {
         scroll-padding-top: 10vh;
-        scroll-behavior: smooth;
+        scroll-behavior: smooth; 
         font-size: @layout-factor;   
     }  
 } 
@@ -67,7 +68,7 @@
 
 // screen smaller than 1024px
 @media screen {
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 769px) and (max-width: 1024px) {
         .set-html(24px);
         .set-css-tablet();
     }
@@ -75,7 +76,7 @@
 
 // screen greater than 1024px
 @media screen {
-    @media (min-width: 1024px) {
+    @media (min-width: 1025px) {
         main {
             width: 1024px;
             margin: 0 auto;

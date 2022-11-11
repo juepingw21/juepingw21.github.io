@@ -204,8 +204,8 @@
     align-items: center;
   }
   .highlight .profile-photo {
-    width: 110px;
-    height: 110px;
+    width: 85px;
+    height: 85px;
     border-radius: 50%;
     display: block;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -217,7 +217,7 @@
     margin: 0rem 0rem 0.5rem 0rem;
     font-family: roboto;
     color: #333333;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     font-style: normal;
   }
@@ -225,14 +225,14 @@
     margin: 0rem 0rem 0.25rem 0rem;
     font-family: source-serif-pro;
     color: #333333;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     font-style: normal;
   }
   .highlight .personal-info .degrees {
     font-family: source-serif-pro;
     color: #333333;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 300;
     font-style: normal;
     margin: 0rem 0rem 0.5rem 0rem;
@@ -257,8 +257,8 @@
   }
   .highlight .external-link-container a .external-link {
     cursor: pointer;
-    width: 20px;
-    height: 20px;
+    width: 18px;
+    height: 18px;
     vertical-align: bottom;
   }
   .about {
@@ -410,8 +410,8 @@
     list-style: square inside none;
   }
   footer {
-    padding: 2rem 1rem;
-    height: 40px;
+    padding: 1rem 1rem;
+    height: 25px;
     line-height: 1.5;
     box-shadow: rgba(0, 0, 0, 0.04) 0 -4px 2px -2px;
     display: flex;
@@ -421,7 +421,7 @@
     letter-spacing: 1px;
     font-family: roboto;
     color: #6b6b6b;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 400;
     font-style: normal;
   }
@@ -433,7 +433,7 @@
   footer div a:hover {
     font-family: roboto;
     color: #6b6b6b;
-    font-size: 14px;
+    font-size: 12px;
     font-weight: 500;
     font-style: normal;
     text-decoration: none;
@@ -448,7 +448,7 @@
     margin: 0 1rem 0 1rem;
   }
 }
-@media screen and (min-width: 768px) and (max-width: 1024px) {
+@media screen and (min-width: 769px) and (max-width: 1024px) {
   html {
     scroll-padding-top: 10vh;
     scroll-behavior: smooth;
@@ -752,8 +752,8 @@
     list-style: square inside none;
   }
   footer {
-    padding: 2rem 1rem;
-    height: 40px;
+    padding: 1rem 1rem;
+    height: 25px;
     line-height: 1.5;
     box-shadow: rgba(0, 0, 0, 0.04) 0 -4px 2px -2px;
     display: flex;
@@ -780,8 +780,37 @@
     font-style: normal;
     text-decoration: none;
   }
+  footer {
+    padding: 1rem 1rem;
+    height: 25px;
+    line-height: 1.5;
+    box-shadow: rgba(0, 0, 0, 0.04) 0 -4px 2px -2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-family: roboto;
+    color: #6b6b6b;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  footer div a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  footer div a:hover {
+    font-family: roboto;
+    color: #6b6b6b;
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+  }
 }
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1025px) {
   main {
     width: 1024px;
     margin: 0 auto;
@@ -1089,8 +1118,8 @@
     list-style: square inside none;
   }
   footer {
-    padding: 2rem 1rem;
-    height: 40px;
+    padding: 1rem 1rem;
+    height: 25px;
     line-height: 1.5;
     box-shadow: rgba(0, 0, 0, 0.04) 0 -4px 2px -2px;
     display: flex;
@@ -1113,6 +1142,35 @@
     font-family: roboto;
     color: #6b6b6b;
     font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    text-decoration: none;
+  }
+  footer {
+    padding: 1rem 1rem;
+    height: 25px;
+    line-height: 1.5;
+    box-shadow: rgba(0, 0, 0, 0.04) 0 -4px 2px -2px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-family: roboto;
+    color: #6b6b6b;
+    font-size: 12px;
+    font-weight: 400;
+    font-style: normal;
+  }
+  footer div a {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+  }
+  footer div a:hover {
+    font-family: roboto;
+    color: #6b6b6b;
+    font-size: 12px;
     font-weight: 500;
     font-style: normal;
     text-decoration: none;
