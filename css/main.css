@@ -88,7 +88,7 @@
 }
 @media screen and (max-width: 768px) {
   html {
-    scroll-padding-top: 10vh;
+    scroll-padding-top: 8vh;
     scroll-behavior: smooth;
     font-size: 20px;
   }
@@ -96,14 +96,13 @@
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: right;
     align-items: center;
-    height: 50px;
+    height: 6vh;
     background-color: white;
-    padding: 0 9px;
     box-shadow: rgba(0, 0, 0, 0.04) 0 4px 2px -2px;
   }
   nav .nav-links {
+    margin: 0 9px 0 auto;
     display: flex;
     justify-content: space-around;
     width: 60%;
@@ -160,7 +159,7 @@
     position: absolute;
     left: 0px;
     height: 48vh;
-    top: 50px;
+    top: 6vh;
     background-color: white;
     display: flex;
     flex-direction: column;
@@ -190,7 +189,7 @@
     line-height: 1;
     font-family: roboto;
     color: #333333;
-    font-size: 20px;
+    font-size: 18px;
     font-weight: 700;
     font-style: normal;
   }
@@ -439,18 +438,9 @@
     text-decoration: none;
   }
 }
-@media screen and (min-width: 650px) {
-  .ability .ability-course .course-list {
-    display: flex;
-    flex-direction: row;
-  }
-  .ability .ability-course .course-list .course-col2 {
-    margin: 0 1rem 0 1rem;
-  }
-}
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   html {
-    scroll-padding-top: 10vh;
+    scroll-padding-top: 8vh;
     scroll-behavior: smooth;
     font-size: 24px;
   }
@@ -458,14 +448,13 @@
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: right;
     align-items: center;
-    height: 50px;
+    height: 6vh;
     background-color: white;
-    padding: 0 9px;
     box-shadow: rgba(0, 0, 0, 0.04) 0 4px 2px -2px;
   }
   nav .nav-links {
+    margin: 0 9px 0 auto;
     display: flex;
     justify-content: space-around;
     width: 60%;
@@ -511,9 +500,6 @@
       opacity: 1;
       transform: translate(0px);
     }
-  }
-  nav {
-    justify-content: right;
   }
   nav .nav-links li {
     display: flex;
@@ -816,7 +802,7 @@
     margin: 0 auto;
   }
   html {
-    scroll-padding-top: 10vh;
+    scroll-padding-top: 8vh;
     scroll-behavior: smooth;
     font-size: 24px;
   }
@@ -824,14 +810,13 @@
     position: sticky;
     top: 0;
     display: flex;
-    justify-content: right;
     align-items: center;
-    height: 50px;
+    height: 6vh;
     background-color: white;
-    padding: 0 9px;
     box-shadow: rgba(0, 0, 0, 0.04) 0 4px 2px -2px;
   }
   nav .nav-links {
+    margin: 0 9px 0 auto;
     display: flex;
     justify-content: space-around;
     width: 60%;
@@ -877,9 +862,6 @@
       opacity: 1;
       transform: translate(0px);
     }
-  }
-  nav {
-    justify-content: right;
   }
   nav .nav-links li {
     display: flex;
@@ -1174,5 +1156,14 @@
     font-weight: 500;
     font-style: normal;
     text-decoration: none;
+  }
+}
+@media screen and (min-width: 650px) {
+  .ability .ability-course .course-list {
+    display: flex;
+    flex-direction: row;
+  }
+  .ability .ability-course .course-list .course-col2 {
+    margin: 0 1rem 0 1rem;
   }
 }

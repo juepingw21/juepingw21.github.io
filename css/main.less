@@ -1,21 +1,22 @@
 @import "./asset/color.less";
-@import "./asset/fonts.less";
-@import "./style/navbar.less"; 
-@import "./style/highlight.less";
-@import "./style/about.less";
-@import "./style/ability.less";
-@import "./style/edu.less";
+@import "./asset/fonts.less"; 
+@import "./style/navbar.less";  
+@import "./style/highlight.less";  
+@import "./style/about.less";    
+@import "./style/ability.less";    
+@import "./style/edu.less"; 
 @import "./style/experience.less";
-@import "./style/project.less"; 
+@import "./style/project.less";  
 @import "./style/navbar-mobile.less";
 @import "./style/navbar-tablet.less";
 @import "./style/section-title.less";
-@import "./style/footer.less";
+@import "./style/footer.less"; 
  
+
 .set-css-mobile() {  
     .set-static-navbar-style(16px);  
     .set-mobile-navbar-style();  
-    .set-section-title-style(20px);
+    .set-section-title-style(18px);
     .set-highlights-style(18px, 16px, 85px, 85px);
     .set-about-style(18px);
     .set-ability-style(18px);
@@ -25,9 +26,9 @@
     .set-footer-style(12px , 12px);
 } 
 
-.set-css-tablet() {
+.set-css-tablet() { 
     .set-static-navbar-style(16px);
-    .set-tablet-navbar-style();
+    .set-tablet-navbar-style(); 
     .set-section-title-style(22px);
     .set-highlights-style(22px, 20px, 130px, 130px);
     .set-about-style(20px);
@@ -41,9 +42,9 @@
 
 .set-html(@layout-factor: 20px) {
     html {
-        scroll-padding-top: 10vh;
+        scroll-padding-top: 8vh;
         scroll-behavior: smooth; 
-        font-size: @layout-factor;   
+        font-size: @layout-factor;
     }  
 } 
 
@@ -51,19 +52,6 @@
 @media screen and (max-width: 768px) {  
     .set-html(20px);
     .set-css-mobile();  
-}
-
-// Resize the course list
-@media screen {
-    @media (min-width: 650px) {
-        .ability .ability-course .course-list {
-            display: flex;
-            flex-direction: row;
-        }
-        .ability .ability-course .course-list .course-col2 {
-            margin: 0 1rem 0 1rem;
-        }
-    }
 }
 
 // screen smaller than 1024px
@@ -76,12 +64,25 @@
 
 // screen greater than 1024px
 @media screen {
-    @media (min-width: 1025px) {
+    @media (min-width: 1025px) { 
         main {
             width: 1024px;
             margin: 0 auto;
         }
         .set-html(24px);
-        .set-css-tablet();
+        .set-css-tablet(); 
+    }
+}
+
+// Resize the course list 
+@media screen {
+    @media (min-width: 650px) {
+        .ability .ability-course .course-list {
+            display: flex;
+            flex-direction: row;
+        }
+        .ability .ability-course .course-list .course-col2 {
+            margin: 0 1rem 0 1rem;
+        }
     }
 }
