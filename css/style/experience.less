@@ -6,19 +6,27 @@
         .experience-item {
             margin: 0 0 1rem 0;
             .exp-info-p1 {
-                .at {
-                    .set-font-style(source-serif-pro,@font-color-dark,@exper-font-size-body,300, normal);
-                }
-                .company {
-                    .set-font-style(source-serif-pro,@font-color-dark,@exper-font-size-body,300, normal);
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
+                .date{
+                    .set-font-style(source-serif-pro,@font-color-light,@exper-font-size-body,300, italic);
                 }
             }
+
             .exp-info-p2 {
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: center;
                 .set-font-style(source-serif-pro,@font-color-light,@exper-font-size-body,300, italic);
             }
+            
             ul {
-                .set-font-style(source-serif-pro,@font-color-dark,@exper-font-size-title,300, normal);
-                list-style: square inside none;
+                margin-left: 1em;
+                .set-font-style(source-serif-pro,@font-color-light,@exper-font-size-body,300, normal);
+                list-style: square outside none;
             }
         }
     }

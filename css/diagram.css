@@ -1,0 +1,42 @@
+.diagram-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    height: 100vh; 
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    transform: rotate(90deg);
+    /* transition: all 0.3s ease-in-out; */
+  }
+  
+  .diagram {
+    background-color: white;
+    border-radius: 6px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+    padding: 30px 50px;
+    width: 75%;
+  }
+
+  .close-btn {
+    border: none;
+    background: #47a386;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  .diagram-img{
+    width: 100%;
+    display: block;
+  }
+
+  main{
+    display: none;
+  }

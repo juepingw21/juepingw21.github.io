@@ -3,14 +3,22 @@
         line-height: 1.5;
         margin: 2rem 1rem;
         .set-font-style(source-serif-pro,@font-color-dark,@project-font-size-title,600, normal);
+        
         .project-item {
             margin: 0 0 1rem 0;
-            .tech-and-date {
-                .set-font-style(source-serif-pro,@font-color-light,@project-font-size-body,300, italic);
+            .project-title{
+                .proj-time{
+                    .set-font-style(source-serif-pro,@font-color-light,@project-font-size-body,300, italic);
+                }
+                // display: flex;
+                // flex-direction: row;
+                // justify-content: space-between;
             }
+            
             ul {
-                .set-font-style(source-serif-pro,@font-color-dark,@project-font-size-body,300, normal);
-                list-style: square inside none;
+                margin-left: 1em;
+                .set-font-style(source-serif-pro,@font-color-light,@project-font-size-body,300, normal);
+                list-style: square outside none;
             }
         }
     }

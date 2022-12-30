@@ -1,52 +1,74 @@
 @import "./asset/color.less";
 @import "./asset/fonts.less"; 
-@import "./style/navbar.less";   
+@import "./style/navbar.less";     
 @import "./style/highlight.less";  
-@import "./style/about.less";     
-@import "./style/ability.less";      
-@import "./style/edu.less";   
-@import "./style/experience.less";
+@import "./style/about.less";         
+@import "./style/ability.less";         
+@import "./style/edu.less";    
+@import "./style/experience.less";  
 @import "./style/project.less";   
 @import "./style/navbar-mobile.less";
 @import "./style/navbar-tablet.less";
 @import "./style/section-title.less";
-@import "./style/footer.less"; 
- 
+@import "./style/footer.less";   
 
-.set-css-mobile() {  
-    .set-static-navbar-style(16px);  
+.set-links(@font-size:18px){
+
+    .link {
+        text-decoration-line: underline;
+        .set-font-style(source-serif-pro,@font-color-light,@font-size, 300, italic);
+    }
+
+    .link:hover {
+        background-color: #FCF299;
+    }
+    
+}
+
+.set-css-mobile() {       
+    .set-static-navbar-style(16px); 
     .set-mobile-navbar-style();  
+
     .set-section-title-style(18px);
-    .set-highlights-style(18px, 16px, 85px, 85px);
+    .set-highlights-style(18px, 16px, 85px, 85px); 
+    
     .set-about-style(18px);
-    .set-ability-style(18px);
-    .set-edu-style(18px, 16px); 
+    .set-ability-style(18px, 18px);
+    
+    .set-links(18px);
+    .set-edu-style(18px, 16px);  
     .set-exper-style(18px, 16px);
     .set-project-style(18px, 16px);
-    .set-footer-style(12px , 12px);
-} 
 
+    .set-footer-style(12px , 12px);
+
+} 
+ 
 .set-css-tablet() {
     .set-static-navbar-style(16px);
     .set-tablet-navbar-style(); 
+
     .set-section-title-style(22px);
     .set-highlights-style(22px, 20px, 130px, 130px);
-    .set-about-style(20px);
-    .set-ability-style(20px); 
-    .set-edu-style(20px, 18px);
-    .set-exper-style(20px, 18px);
-    .set-project-style(20px, 18px);
-    .set-footer-style(14px , 14px);
-    .set-footer-style(12px , 12px);
-}
+    
+    .set-about-style(18px);
+    .set-ability-style(20px, 18px);
 
+    .set-links(18px);
+    .set-edu-style(20px, 18px);
+    .set-exper-style(20px, 18px);  
+    .set-project-style(20px, 18px);
+
+    .set-footer-style(12px , 12px); 
+}
+ 
 .set-html(@layout-factor: 20px) {
     html {
         scroll-padding-top: 8vh;
         scroll-behavior: smooth; 
         font-size: @layout-factor; 
-    }  
-} 
+    }   
+}   
 
 // screen smaller than 768px 
 @media screen and (max-width: 768px) {  
@@ -73,7 +95,7 @@
         .set-css-tablet(); 
     }
 }
-
+ 
 // Resize the course list 
 @media screen {
     @media (min-width: 650px) {

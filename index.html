@@ -1,1 +1,418 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Template</title><link rel="stylesheet" href="./css/reset.min.css"><link rel="stylesheet" href="./css/main.min.css"></head><body><main><nav><div class="burger"><div class="line1"></div><div class="line2"></div><div class="line3"></div></div><ul class="nav-links"><li><a href="#">Home</a></li><li><a href="#about">About Me</a></li><li><a href="#edu">Education</a></li><li><a href="#project">Projects</a></li><li><a href="#experience">Experiences</a></li></ul></nav><section class="highlight"><img src="./img/p-img.png" class="profile-photo"><div class="personal-info"><div class="name">Jueping Wang</div><div class="status">Recent Graduate Student</div><div class="degrees"><span class="bs">Computer Science, BS</span> <span class="vbar">|</span> <span class="ms">Cybersecurity, MS</span></div><div class="external-link-container"><a href="https://github.com/juepingw21"><img class="external-link" herf="https://github.com/juepingw21" src="./css/asset/icon/envelope-solid.svg" alt=""> </a><a href="https://github.com/juepingw21"><img class="external-link" src="./css/asset/icon/linkedin.svg" alt=""> </a><a href="https://github.com/juepingw21"><img class="external-link" src="./css/asset/icon/github.svg" alt=""></a></div></div></section><section class="about" id="about"><h2>About</h2><hr><p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque dolorem odio, iusto nam nesciunt, porro fugit libero quos praesentium non delectus deleniti impedit consectetur accusantium similique officiis quaerat aperiam minus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque dolorem odio, iusto nam nesciunt, porro fugit libero quos praesentium non delectus deleniti impedit consectetur accusantium similique officiis quaerat aperiam minus?Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque dolorem odio, iusto nam nesciunt, porro fugit libero quos praesentium non delectus deleniti impedit consectetur.</p></section><section class="ability" id="ability"><h2>Skill</h2><hr><ul class="skills"><li><div class="category">Languages:</div><div class="detail">Java, JavaScript, Python, C/C++, Sql, html, css</div></li><li><div class="category">Frameworks:</div><div class="detail">Express.js, Spring5</div></li><li><div class="category">Library:</div><div class="detail">mongoose</div></li><li><div class="category">Tools:</div><div class="detail">git, Postman</div></li><li><div class="category">Others:</div><div class="detail">Node js</div></li></ul><div class="ability-course"><div class="course-title">Related CS Courses:</div><div class="course-list"><ul class="course-col1"><li>Computer Programming I & II</li><li>Data Structures</li><li>Computer Organization</li><li>Software Development</li><li>Systems Programming & Unix</li><li>OOP and Design</li><li>Theory of Probability</li></ul><ul class="course-col2"><li>Analysis of Discrete Structures</li><li>Principles of Computer Networking</li><li>Algorithms</li><li>Parallel & Distributed Programming</li><li>Comparative Programming Languages</li><li>Principles of Operating Systems</li><li>Database Design</li></ul></div></div></section><section class="edu" id="edu"><h2>Education</h2><hr><div class="edu-item"><div class="edu-name">New York Institute of Technology</div><div class="major">Cybersecurity, MS</div><div class="edu-date">2021 - 2022</div></div><div class="edu-item"><div class="edu-name">University of Arizona</div><div class="major">Computer Science, BS</div><div class="major">Mathematics minor</div><div class="edu-date">2018 - 2020</div></div><div class="edu-item"><div class="edu-name">Santa Monica College</div><div class="major">Computer Science</div><div class="edu-date">2016 - 2018</div></div></section><section class="project" id="project"><h2>Projects</h2><hr><div class="project-item"><div class="proj-name">CPU Simulation</div><div class="tech-and-date">C language -- Summer 2019</div><ul><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium sapiente accusamus delectus itaque vero consectetur maxime laboriosam doloremque.</li><li>Lorem ipsum dolor sit amet consectetur adipisicing elit.sapiente accusamus delectus itaque vero consectetur maxime laboriosam doloremque.</li></ul></div></section><section class="experience" id="experience"><h2>Experiences</h2><hr><div class="experience-item"><div class="exp-info-p1"><span class="postion">Undergraduate Researcher</span> <span class="at">at</span> <span class="company">University of Arizona</span></div><div class="exp-info-p2"><span class="date">January 2018 - December 2018 • </span><span>Tucson AZ</span></div><ul><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa consequatur harum maxime ipsam odit necessitatibus suscipit, itaque modi sed quam debitis porro repellat non ipsum facilis, tenetur sequi pariatur!</li><li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus culpa consequatur harum maxime ipsam odit necessitatibus suscipit, itaque modi sed quam debitis porro repellat non ipsum facilis, tenetur sequi pariatur!</li></ul></div></section><footer><div class="footer-title"><a href="https://github.com/juepingw21">Jueping Wang</a> - 2022</div><div class="footer-body">Created and Designed by <a href="https://github.com/juepingw21">Jueping Wang</a></div></footer></main><script src="./js/app.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="robots" content="noindex">
+        <META NAME="robots" CONTENT="nofollow">
+        <title>Jueping's resume</title>
+        <link rel="stylesheet" href="./css/reset.min.css" />
+        <link rel="stylesheet" href="./css/main.css" />
+    </head>
+    <body>
+        <main>
+            <nav>
+                <div class="burger">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#about">About Me</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#experience">Experiences</a></li>
+                    <li><a href="#edu">Education</a></li>
+                </ul>
+            </nav>
+            <section class="highlight">
+                <img src="./img/p-img.png" class="profile-photo" />
+                <div class="personal-info">
+                    <div class="name">Jueping Wang</div>
+                    <div class="status">2023 New Grad</div>
+                    <div class="degrees">
+                        <span class="bs">Computer Science, BS</span>
+                        <span class="vbar">|</span>
+                        <span class="ms">Cybersecurity, MS</span>
+                    </div>
+                    <div class="external-link-container">
+                        <a href="mailto:jueping.wang21@gmail.com"
+                            ><img
+                                class="external-link"
+                                src="./css/asset/icon/envelope-solid.svg"
+                                alt=""
+                            /> </a
+                        ><a href="https://github.com/juepingw21"
+                            ><img
+                                class="external-link"
+                                src="./css/asset/icon/github.svg"
+                                alt=""
+                        /></a>
+                        <a href="https:www.linkedin.com/in/juepingwang"
+                            ><img
+                                class="external-link"
+                                src="./css/asset/icon/linkedin.svg"
+                                alt=""
+                            />
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section class="about" id="about">
+                <h2>About</h2>
+                <hr />
+                <p class="hello">Hello,</p>
+                <p>I am a 2023 new grad student.</p>
+                <p>
+                    I am seeking an entry-level software development or web
+                    devolvement position.
+                </p>
+                <ul>
+                    <li>
+                        I enjoy leveraging my technical skills to solve
+                        immediate problems.
+                    </li>
+                    <li>
+                        I always have a positive attitude by facing challenging
+                        problems.
+                    </li>
+                    <li>
+                        I am passionate about collaborating and working with
+                        people.
+                    </li>
+                    <li>I have an excellent work ethic.</li>
+                </ul>
+            </section>
+            <section class="ability" id="ability">
+                <h2>Skill</h2>
+                <hr />
+                <ul class="skills">
+                    <li>
+                        <div class="category">Languages:</div>
+                        <div class="detail">
+                            Java &nbsp;·&nbsp; Node.js &nbsp;·&nbsp; Python
+                            &nbsp;·&nbsp; C &nbsp;·&nbsp; HTML &nbsp;·&nbsp; CSS
+                            &nbsp;·&nbsp; JavaScript
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category">Frameworks:</div>
+                        <div class="detail">
+                            Express.js &nbsp;·&nbsp; Jest &nbsp;·&nbsp; JUnit
+                            &nbsp;·&nbsp; Spring & SpringMVC (Ongoing learning)
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category">Services/Tools:</div>
+                        <div class="detail">
+                            SQL &nbsp;·&nbsp; MongoDB &nbsp;·&nbsp; Redis
+                            &nbsp;·&nbsp; AWS EC2 &nbsp;·&nbsp; Git
+                            &nbsp;·&nbsp; Postman &nbsp;·&nbsp; Docker
+                        </div>
+                    </li>
+                    <!-- <li>
+                        <div class="category">Tools:</div>
+                        <div class="detail">git, Postman</div>
+                    </li>
+                    <li>
+                        <div class="category">Others:</div>
+                        <div class="detail">Node js</div>
+                    </li> -->
+                </ul>
+                <div class="ability-course">
+                    <div class="course-title">Related CS Courses:</div>
+                    <div class="course-list">
+                        <ul class="course-col1">
+                            <li>Computer Programming I & II</li>
+                            <li>Data Structures</li>
+                            <li>Computer Organization</li>
+                            <li>Systems Programming & Unix</li>
+                            <li>OOP and Design</li>
+                            <li>Theory of Probability</li>
+                            <li>Analysis of Discrete Structures</li>
+                        </ul>
+                        <ul class="course-col2">
+                            <li>Principles of Computer Networking</li>
+                            <li>Algorithms</li>
+                            <li>Parallel & Distributed Programming</li>
+                            <li>Comparative Programming Languages</li>
+                            <li>Principles of Operating Systems</li>
+                            <li>Database Design</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="project" id="project">
+                <h2>Projects</h2>
+                <hr />
+                <div class="project-item">
+                    <div class="project-title">
+                        <div class="proj-name">Full-stack Chat Application</div>
+                        <div class="proj-time">
+                            Node.js, Express, MongoDB, Redis -- Fall 2022
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            Leveraged micro-services architecture to design and
+                            implement a loosely-coupled Chat application,
+                            providing real-time communications through chat
+                            rooms(<a
+                                class="link"
+                                href="./img/chat-diagram.png"
+                                target="_blank"
+                                >Design-diagram</a
+                            >). Chat room creation and joining functionalities
+                            are supported.
+                        </li>
+                        <li>
+                            Built a RESTful Login API that supports user
+                            registration, login, logout, profile, authorization,
+                            and verification by a JWT token. Utilizing Redis
+                            cache reduces 35% of the average verification
+                            response time.
+                        </li>
+                        <li>
+                            Reduced the time complexity to O(1) for the primary
+                            operations from socket sessions, active room, and
+                            active user management modules on the chat server.
+                            All routers establish a stateless user
+                            authentication.
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <div class="project-title">
+                        <div class="proj-name">
+                            Fitness Factory App (www.fitnessfac.ca)
+                        </div>
+                        <div class="proj-time">
+                            Swift, Docker, Postman -- Spring 2022
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            Improved the maintainability and flexibility by
+                            refactoring codes and rebuilding the configuration
+                            files.
+                        </li>
+                        <li>
+                            Consulted the Dev team for environment set up and
+                            performed API functional testing.
+                        </li>
+                        <li>
+                            Collaborated with the design team and other team
+                            members to implement a dark mode for the
+                            application.
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <div class="project-title">
+                        <div class="proj-name">Shopping Mall Database</div>
+                        <div class="proj-time">
+                            Java, SQL, Spring Boot -- Fall 2020
+                        </div>
+                    </div>
+                    <ul>
+                        <li>
+                            Designed and optimized 10 tables in the 3rd normal
+                            form for sales management schema(<a
+                                class="link"
+                                href="./img/er-diagram.png"
+                                target="_blank"
+                                >ER - Diagram</a
+                            >).
+                        </li>
+                        <li>
+                            Built a database-driven application that supports
+                            basic CRUD and more customized operations.
+                        </li>
+                        <li>
+                            Improved user experience by implementing a web-query
+                            user interface rather than a console program.
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <div class="project-title">
+                        <div class="proj-name">
+                            Scientific Graphing Calculator
+                        </div>
+                        <div class="proj-time">Java, JavaFx -- Fall 2019</div>
+                    </div>
+                    <ul>
+                        <li>
+                            Adopted the MVC approach and object-oriented design
+                            patterns to design a clone of a TI-8x Calculator.
+                        </li>
+                        <li>
+                            Reduced 40% Calculus’s calculation and visualization
+                            average processing time by a multi-threading
+                            approach.
+                        </li>
+                        <li>
+                            Allowed users to save and resume calculation
+                            sessions, export visualization images, and retrieve
+                            histories.
+                        </li>
+                    </ul>
+                </div>
+                <div class="project-item">
+                    <div class="project-title">
+                        <div class="proj-name">Single-cycle CPU Simulation</div>
+                        <div class="proj-time">C language -- Spring 2018</div>
+                    </div>
+                    <ul>
+                        <li>
+                            Implemented a MIPS processor simulation that
+                            supports 17 MIPS instructions.
+                        </li>
+                        <li>
+                            Each instruction processing matches the working
+                            principle of logic circuits and MIPS architecture
+                            exactly.
+                        </li>
+                        <li>
+                            This project was divided into 3 phases, arithmetic
+                            logic units, complex logic circuits, and
+                            instructions.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="experience" id="experience">
+                <h2>Experiences</h2>
+                <hr />
+                <div class="experience-item">
+                    <div class="exp-info-p1">
+                        <div class="company">
+                            New York Institute of Technology
+                        </div>
+                        <div class="date">May 2021 - May 2022</div>
+                    </div>
+                    <div class="exp-info-p2">
+                        <div class="postion">Graduate Teaching Assistant</div>
+                        <div class="location">Vancouver, BC</div>
+                    </div>
+                    <ul>
+                        <li>
+                            Worked as a TA for an Operating System Security
+                            course (Summer 2021, Fall 2021, Spring 2022).
+                        </li>
+                        <li>
+                            Collaborated with the professor to help answer
+                            students' questions for the labs.
+                        </li>
+                        <li>
+                            Assisted the professor in grading assignments and
+                            exams; Hold office hours.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-info-p1">
+                        <div class="company">University of Arizona</div>
+                        <div class="date">Feb. 2020 – Dec. 2020</div>
+                    </div>
+                    <div class="exp-info-p2">
+                        <div class="postion">
+                            Undergraduate Research Assistant
+                        </div>
+                        <div class="location">Tucson, AZ</div>
+                    </div>
+                    <ul>
+                        <li>
+                            Accelerated the productivity of the Analytic and
+                            Computing Team by creating multiple python tools.
+                        </li>
+                        <li>
+                            Reduced the 35% average parsing time for the data
+                            parser using the appropriate data structures.
+                        </li>
+                        <li>
+                            Collaborated with a cybersecurity specialist to
+                            design the
+                            <a
+                                class="link"
+                                href="https://ce.arizona.edu/cybersecurity-training"
+                                target="_blank"
+                                >Cybersecurity Essentials Training Program</a
+                            >.
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="experience-item">
+                    <div class="exp-info-p1">
+                        <div class="company">Santa Monica College</div>
+                        <div class="date">Sep. 2017 - June 2018</div>
+                    </div>
+                    <div class="exp-info-p2">
+                        <div class="postion">Computer Science Tutor</div>
+                        <div class="location">Santa Monica, CA</div>
+                    </div>
+                    <ul>
+                        <li>
+                            Worked as a part-time Computer Science tutor in the
+                            CSCI department.
+                        </li>
+                        <li>
+                            Assisted students with debugging and solving
+                            questions in related programming subjects.
+                        </li>
+                        <li>
+                            Maintained a 100% customer satisfaction rate
+                            according to student feedback.
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="edu" id="edu">
+                <h2>Education</h2>
+                <hr />
+                <div class="edu-item">
+                    <div class="edu-name">New York Institute of Technology</div>
+                    <div class="major">
+                        Cybersecurity, MS -- GPA: 3.74 / 4.0
+                    </div>
+                    <div class="edu-date">2021 - 2022</div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-name">University of Arizona</div>
+                    <div class="major">
+                        Computer Science, BS -- GPA: 3.53 / 4.0
+                    </div>
+                    <div class="major">Mathematics minor</div>
+                    <div class="edu-date">2018 - 2020</div>
+                    <div>
+                        Activities and Societies: Arizona’s Science,
+                        Engineering, and Math Scholars (ASEMS)
+                    </div>
+                </div>
+                <div class="edu-item">
+                    <div class="edu-name">Santa Monica College</div>
+                    <div class="major">Computer Science -- GPA: 3.75 / 4.0</div>
+                    <div class="edu-date">2016 - 2018</div>
+                    <div>Activities and societies: AGS honor society</div>
+                </div>
+            </section>
+
+            <footer>
+                <div class="footer-title">
+                    <a href="https://github.com/juepingw21">Jueping Wang</a> -
+                    2022
+                </div>
+                <div class="footer-body">
+                    Created and Designed by
+                    <a href="https://github.com/juepingw21">Jueping Wang</a>
+                </div>
+            </footer>
+        </main>
+        <script src="./js/app.js"></script>
+    </body>
+</html>
