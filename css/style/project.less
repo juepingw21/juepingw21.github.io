@@ -3,18 +3,26 @@
         line-height: 1.5;
         margin: 2rem 1rem;
         .set-font-style(source-serif-pro,@font-color-dark,@project-font-size-title,600, normal);
-        
+
         .project-item {
             margin: 0 0 1rem 0;
-            .project-title{
-                .proj-time{
+            .project-title {
+                .proj-name{
+                    a{
+                        .external-link{
+                            vertical-align: middle;
+                            width: @project-font-size-title;
+                        }
+                    }
+                }
+                .proj-time {
                     .set-font-style(source-serif-pro,@font-color-light,@project-font-size-body,300, italic);
                 }
                 // display: flex;
                 // flex-direction: row;
                 // justify-content: space-between;
             }
-            
+
             ul {
                 margin-left: 1em;
                 .set-font-style(source-serif-pro,@font-color-light,@project-font-size-body,300, normal);

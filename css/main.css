@@ -406,6 +406,10 @@
   .project .project-item {
     margin: 0 0 1rem 0;
   }
+  .project .project-item .project-title .proj-name a .external-link {
+    vertical-align: middle;
+    width: 18px;
+  }
   .project .project-item .project-title .proj-time {
     font-family: source-serif-pro;
     color: #6b6b6b;
@@ -750,6 +754,10 @@
   }
   .project .project-item {
     margin: 0 0 1rem 0;
+  }
+  .project .project-item .project-title .proj-name a .external-link {
+    vertical-align: middle;
+    width: 20px;
   }
   .project .project-item .project-title .proj-time {
     font-family: source-serif-pro;
@@ -1099,6 +1107,10 @@
   }
   .project .project-item {
     margin: 0 0 1rem 0;
+  }
+  .project .project-item .project-title .proj-name a .external-link {
+    vertical-align: middle;
+    width: 20px;
   }
   .project .project-item .project-title .proj-time {
     font-family: source-serif-pro;
